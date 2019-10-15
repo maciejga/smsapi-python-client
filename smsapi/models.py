@@ -118,7 +118,7 @@ class SendResult(Model):
 
     def __init__(self, id=None, points=None, number=None,
                  date_sent=None, submitted_number=None,
-                 status=None, idx=None, error=None):
+                 status=None, idx=None, error=None, parts=None):
 
         super(SendResult, self).__init__()
 
@@ -130,6 +130,7 @@ class SendResult(Model):
         self.status = status
         self.idx = idx
         self.error = error
+        self.parts = parts
 
 
 class RemoveMessageResult(Model):
